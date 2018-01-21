@@ -1,0 +1,42 @@
+{% load admin_static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment manager</title>
+    {% load static %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
+    <link href="{% static 'css/font-awesome.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/lightbox.css'%}">
+</head>
+<body style="background-image: url({% static 'images/1.jpeg'%});background-repeat:no-repeat;background-size: cover;">
+<div class="container-fluid">
+    <div class = "row">
+           <center><a href="/home/" ><h1 class="asdf">Assignment</h1></a></center>
+    </div>
+{% block content %}
+{% endblock content %}
+
+</div>
+
+<!--<h1>Assignment Submission</h1>-->
+<!--<a href="/admin/"><h3>Prof</h3></a>-->
+<!--{%if s%}-->
+<!--{%for i in s%}-->
+<!--<a target="_blank" href="{{i.agn_file.url}}"><h1>{{i.agn_file}}</h1></a>-->
+<!--<h1>{{i.name}}</h1>-->
+<!--{%endfor%}-->
+<!--{%endif%}-->
+<!--<a href=""><h3>Student</h3></a>-->
+<!--<form enctype="multipart/form-data" class="form-horizontal" action="" method="post">-->
+				<!--{% csrf_token %}-->
+					<!--{{form}}-->
+				<!--</select>-->
+				<!--<button type="submit" class="btn btn-danger" style="float: right;">Submit</button><br>-->
+			<!--</form>-->
+</body>
+</html>

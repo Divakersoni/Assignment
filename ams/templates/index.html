@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+     <div class="row">
+        <div class="col-sm-6">
+            <div class="new1">
+                <h1 class="new2"><br><span style="color:red;">CREATE</span> Assignment ?</h1>
+            </div>
+          <div class="row" style="margin-left:10%;">
+            <div class="col-sm-6">
+              <div class="new123">
+                <a href="/admin/" style="color:white;"><h3><center>Proffesor<br>Login(admin)</center></h3></a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="new123">
+                    <a href="/admin/create/create_assignment/add/" style="color:white;font"><h3><center>Create<br>Assignment</center></h3></a>
+                </div>
+            </div>
+          </div>
+          <div class="row" style="margin-left:10%;">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+              <div class="new123">
+                <a href="/login/" style="color:white;"><h3><center>See<br>Submissions</center></h3></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="new1">
+                <h1 class="new2"><br><span style="color:red;">Submit</span> Assignment ?</h1>
+            </div>
+            <div class="new12" style="margin-left:15%; width:50%">
+                <div class="row">
+                    <form class="form-horizontal" style="color:white;" action="" method="post" enctype="multipart/form-data">
+				        {% csrf_token %}
+					    {{form}}
+				        </select>
+				        <button type="submit" class="btn btn-danger" style="float: right;margin-top:20px;">Submit</button><br>
+			        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
